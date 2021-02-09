@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ConnectionMonitor {
 
-    private static final int STALE_THRESHOLD = 6; // Server::Connections::BEAT_INTERVAL * 2 (missed two pings)
+    private static final int STALE_THRESHOLD = 60; // Server::Connections::BEAT_INTERVAL * 2 (missed two pings)
 
     private final Connection connection;
 
